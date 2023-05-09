@@ -30,7 +30,16 @@ public:
 	string getStocare();
 	string getProcesor();
 
+	// Default constructor
 	Calculator();
+
+	// Constructor with parameters
+	Calculator(string gpu, string m, string p, string stoc, int s, int rm);
+
+	// Copy constructor
+	Calculator(const Calculator& other);
+
+	// Destructor
 	~Calculator();
 };
 

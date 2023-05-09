@@ -63,10 +63,20 @@ string Calculator::getProcesor()
     return procesor;
 }
 
-Calculator::Calculator()
-{
+// Default constructor
+Calculator::Calculator() : marca(""), ram(0), sursa(0), procesor(""), gpu(""), stocare("") {}
+
+// Constructor with parameters
+Calculator::Calculator(string gpu, string m, string p, string stoc, int s, int rm) : marca(m), ram(rm), sursa(s), procesor(p), gpu(gpu), stocare(stoc) {}
+
+// Copy constructor
+Calculator::Calculator(const Calculator& other) {
+    marca = other.marca;
+    procesor = other.procesor;
+    ram = other.ram;
+    sursa = other.sursa;
 }
 
-Calculator::~Calculator()
-{
-}
+// Destructor
+Calculator::~Calculator() {}
+
