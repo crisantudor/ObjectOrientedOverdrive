@@ -4,29 +4,22 @@
 int main()
 {
     // Create an object of the Calculator class
-    Calculator calculator;
-
-    // Set the values of some of the object's member variables using its setters
-    calculator.setRam(8);
-    calculator.setSursa(500);
-    calculator.setGpu("Nvidia");
-    calculator.setMarca("Asus");
-    calculator.setProcesor("Intel i7");
-    calculator.setStocare("SSD");
+    Calculator calculatorDefault;
+    Calculator calculatorCustom("Lenovo", "Intel i9", "SSD", 240, 16);
 
     // Get the values of the object's member variables using its getters
-    int ram = calculator.getRam();
-    int sursa = calculator.getSursa();
-    string gpu = calculator.getGpu();
-    string marca = calculator.getMarca();
-    string procesor = calculator.getProcesor();
-    string stocare = calculator.getStocare();
+    int ram = calculatorCustom.getRam();
+    int sursa = calculatorCustom.getSursa();
+    string gpu = calculatorCustom.getGpu();
+    string marca = calculatorCustom.getMarca();
+    Procesor procesor = calculatorCustom.getProcesor();
+    string stocare = calculatorCustom.getStocare();
 
     // Output the values of the member variables to the console
     cout << "RAM: " << ram << endl;
     cout << "Sursa: " << sursa << " W" << endl;
     cout << "GPU: " << gpu << endl;
     cout << "Marca: " << marca << endl;
-    cout << "Procesor: " << procesor << endl;
+    cout << "Model Procesor: " << procesor.getModel() << endl;
     cout << "Stocare: " << stocare << endl;
 }

@@ -3,28 +3,28 @@
 
 // clasa B din diagrama
 class CalculatorLaptop : public Calculator {
-protected:
-    int batteryLife;
-    double weight;
+    protected:
+        int batteryLife;
+        double weight;
 
-public:
-    // constructors
-    CalculatorLaptop();
-    CalculatorLaptop(int b, double w);
+    public:
+        // constructors
+        CalculatorLaptop();
+        CalculatorLaptop(int b, double w);
 
-    // destructors
-    ~CalculatorLaptop();
+        // destructors
+        ~CalculatorLaptop();
 
-    // settere
-    void setBatteryLife(int life);
-    void setWeight(double w);
+        // settere
+        void setBatteryLife(int life);
+        void setWeight(double w);
 
-    // gettere
-    int getBatteryLife();
-    double getWeight();
+        // gettere
+        int getBatteryLife();
+        double getWeight();
 
-    // metode custom
-    string calculateBatteryLife();
+        // metode custom
+        string calculateBatteryLife();
 };
 
 

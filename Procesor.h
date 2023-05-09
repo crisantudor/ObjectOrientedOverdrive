@@ -14,6 +14,7 @@ class Procesor
 
     public:
         // constructor
+        Procesor();
         Procesor(string prod, string mod, double freq, int nuclee);
 
         // destructor

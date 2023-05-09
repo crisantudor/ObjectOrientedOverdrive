@@ -14,6 +14,7 @@ class CalculatorDesktop : public Calculator
 
     public:
         // constructor
+        CalculatorDesktop();
         CalculatorDesktop(int nv, string tt);
 
         // destructor

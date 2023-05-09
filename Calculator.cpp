@@ -23,11 +23,6 @@ void Calculator::setMarca(string m)
     marca = m;
 }
 
-void Calculator::setProcesor(string cpu)
-{
-    procesor = cpu;
-}
-
 void Calculator::setStocare(string s)
 {
     stocare = s;
@@ -58,16 +53,16 @@ string Calculator::getStocare()
     return stocare;
 }
 
-string Calculator::getProcesor()
+Procesor Calculator::getProcesor()
 {
     return procesor;
 }
 
 // Default constructor
-Calculator::Calculator() : marca(""), ram(0), sursa(0), procesor(""), gpu(""), stocare("") {}
+Calculator::Calculator() : marca("marca default"), ram(0), sursa(0), gpu("procesor default"), stocare("stocare default") {}
 
 // Constructor with parameters
-Calculator::Calculator(string gpu, string m, string p, string stoc, int s, int rm) : marca(m), ram(rm), sursa(s), procesor(p), gpu(gpu), stocare(stoc) {}
+Calculator::Calculator(string gpu, string m, string stoc, int s, int rm) : marca(m), ram(rm), sursa(s), gpu(gpu), stocare(stoc) {}
 
 // Copy constructor
 Calculator::Calculator(const Calculator& other) {
