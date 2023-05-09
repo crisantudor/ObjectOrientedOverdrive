@@ -1,20 +1,34 @@
-// ObjectOrientedOverdrive.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include "Calculator.h"
 
 int main()
 {
     std::cout << "Hello World!\n";
+
+    // Create an object of the Calculator class
+    Calculator myCalc;
+
+    // Set the values of some of the object's member variables using its setters
+    myCalc.setRam(8);
+    myCalc.setSursa(500);
+    myCalc.setGpu("Nvidia");
+    myCalc.setMarca("Asus");
+    myCalc.setProcesor("Intel i7");
+    myCalc.setStocare("SSD");
+
+    // Get the values of the object's member variables using its getters
+    int ram = myCalc.getRam();
+    int sursa = myCalc.getSursa();
+    string gpu = myCalc.getGpu();
+    string marca = myCalc.getMarca();
+    string procesor = myCalc.getProcesor();
+    string stocare = myCalc.getStocare();
+
+    // Output the values of the member variables to the console
+    cout << "RAM: " << ram << endl;
+    cout << "Sursa: " << sursa << " W" << endl;
+    cout << "GPU: " << gpu << endl;
+    cout << "Marca: " << marca << endl;
+    cout << "Procesor: " << procesor << endl;
+    cout << "Stocare: " << stocare << endl;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
