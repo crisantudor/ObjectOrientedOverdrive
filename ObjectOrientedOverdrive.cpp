@@ -6,23 +6,23 @@ int main()
     std::cout << "Hello World!\n";
 
     // Create an object of the Calculator class
-    Calculator myCalc;
+    Calculator calculator;
 
     // Set the values of some of the object's member variables using its setters
-    myCalc.setRam(8);
-    myCalc.setSursa(500);
-    myCalc.setGpu("Nvidia");
-    myCalc.setMarca("Asus");
-    myCalc.setProcesor("Intel i7");
-    myCalc.setStocare("SSD");
+    calculator.setRam(8);
+    calculator.setSursa(500);
+    calculator.setGpu("Nvidia");
+    calculator.setMarca("Asus");
+    calculator.setProcesor("Intel i7");
+    calculator.setStocare("SSD");
 
     // Get the values of the object's member variables using its getters
-    int ram = myCalc.getRam();
-    int sursa = myCalc.getSursa();
-    string gpu = myCalc.getGpu();
-    string marca = myCalc.getMarca();
-    string procesor = myCalc.getProcesor();
-    string stocare = myCalc.getStocare();
+    int ram = calculator.getRam();
+    int sursa = calculator.getSursa();
+    string gpu = calculator.getGpu();
+    string marca = calculator.getMarca();
+    string procesor = calculator.getProcesor();
+    string stocare = calculator.getStocare();
 
     // Output the values of the member variables to the console
     cout << "RAM: " << ram << endl;
