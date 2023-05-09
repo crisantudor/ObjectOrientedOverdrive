@@ -31,16 +31,16 @@ int main()
 
     // Output the values of the member variables to the console
 
-    // pt calculator facut cu constructor custom
-    // polymorphism static -> compile time
+    // pt calculator facut cu constructor custom // polymorphism static -> compile time
     calculatorCustom.afiseazaDateleObiectului();
     calculatorCustom.afiseazaDateleObiectului(calculatorCustom.getRam());
+
+    // pt calculatorul facut cu constructor default: 
+    calculatorDefault.afiseazaDateleObiectului(calculatorDefault.getRam());
 
     // polymorphism dinamic, prin ref -> runtime
     Calculator *referintaLaLaptopulPtFaculta = &laptopulPtFaculta;
     referintaLaLaptopulPtFaculta->afiseazaDateleObiectului();
 
-    // pt calculatorul facut cu constructor default: 
-    calculatorDefault.afiseazaDateleObiectului(calculatorDefault.getRam());
 
 }
