@@ -13,7 +13,7 @@ class CalculatorDesktop : public Calculator
         vector<pair<string, int>> hardwareComponents;
 
     public:
-        // constructor
+        // constructors
         CalculatorDesktop();
         CalculatorDesktop(int nv, string tt);
 

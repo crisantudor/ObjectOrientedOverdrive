@@ -1,11 +1,8 @@
 #include "CalculatorDesktop.h"
 
-CalculatorDesktop::CalculatorDesktop()
-{
+CalculatorDesktop::CalculatorDesktop() : Calculator(), numarVentilatoare(0), tipTastatura(""), hardwareComponents() {};
 
-}
-
-CalculatorDesktop::CalculatorDesktop(int nv, string tt) : Calculator(), numarVentilatoare(nv), tipTastatura(tt) {}
+CalculatorDesktop::CalculatorDesktop(int nv, string tt) : Calculator(), numarVentilatoare(nv), tipTastatura(tt), hardwareComponents() {};
 CalculatorDesktop::~CalculatorDesktop()
 {
 }

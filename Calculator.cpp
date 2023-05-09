@@ -59,7 +59,7 @@ Procesor Calculator::getProcesor()
 }
 
 // Default constructor
-Calculator::Calculator() : marca("marca default"), ram(0), sursa(0), gpu("procesor default"), stocare("stocare default") {}
+Calculator::Calculator() : marca("-"), ram(0), sursa(0), gpu("-"), stocare("-") {}
 
 // Constructor with parameters
 Calculator::Calculator(string gpu, string m, string stoc, int s, int rm) : marca(m), ram(rm), sursa(s), gpu(gpu), stocare(stoc) {}

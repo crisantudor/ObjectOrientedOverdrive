@@ -22,5 +22,5 @@ string CalculatorLaptopGaming::getSistemDeRacire()
 
 void CalculatorLaptopGaming::overclockProcesor()
 {
-    // implementation of method to overclock the processor
+    // implementation of method to overclock the processor - eeh
 }
