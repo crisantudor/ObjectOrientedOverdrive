@@ -23,13 +23,12 @@ public:
     }
 
     // constructors
-    CalculatorLaptop() : batteryLife(0), weight(0.0) {}
+    CalculatorLaptop();
 
-    CalculatorLaptop(int b, double w)
-        : Calculator(), batteryLife(b), weight(w) {}
+    CalculatorLaptop(int b, double w);
 
     // destructors
-    ~CalculatorLaptop() {}
+    ~CalculatorLaptop();
 };
 
 
