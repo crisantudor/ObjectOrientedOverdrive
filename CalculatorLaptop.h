@@ -1,5 +1,7 @@
 #pragma once
 #include "Calculator.h"
+
+// clasa B din diagrama
 class CalculatorLaptop : public Calculator {
 protected:
     int batteryLife;
