@@ -44,5 +44,9 @@ public:
 	string getMarca();
 	string getStocare();
 	Procesor getProcesor();
+
+	virtual void afiseazaDateleObiectului();
+
+	void afiseazaDateleObiectului(int r);
 };
 

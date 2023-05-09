@@ -27,6 +27,8 @@ class CalculatorLaptop : public Calculator {
 
         // metode custom
         string calculateBatteryLife();
+
+        void afiseazaDateleObiectului();
 };
 
 

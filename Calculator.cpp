@@ -1,5 +1,6 @@
 #include "Calculator.h"
 #include <string> // Include the <string> header to define the string type
+#include <iostream>
 
 using namespace std;
 
@@ -56,6 +57,16 @@ string Calculator::getStocare()
 Procesor Calculator::getProcesor()
 {
     return procesor;
+}
+
+void Calculator::afiseazaDateleObiectului()
+{
+   cout << "Calculator: " << "Ram:" << ram << ", Sursa: " << sursa << " W" << ", GPU: " << gpu << ", Marca: " << marca << ", Model Procesor: " << getProcesor().getModel() << ", Stocare: " << stocare << endl;
+}
+
+void Calculator::afiseazaDateleObiectului(int r)
+{
+    cout << "Calculator: " << "Ram:" << r << ", Sursa: " << sursa << " W" << ", GPU: " << gpu << ", Marca: " << marca << ", Model Procesor: " << getProcesor().getModel() << ", Stocare: " << stocare << endl;
 }
 
 // Default constructor

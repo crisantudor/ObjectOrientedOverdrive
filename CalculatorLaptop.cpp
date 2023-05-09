@@ -1,4 +1,5 @@
 #include "CalculatorLaptop.h"
+#include <iostream>
 
 void CalculatorLaptop::setBatteryLife(int life)
 {
@@ -30,6 +31,11 @@ string CalculatorLaptop::calculateBatteryLife()
     string batteryLifeStr = to_string(batteryLife);
 
     return "Battery life: " + batteryLifeStr + " %";
+}
+
+void CalculatorLaptop::afiseazaDateleObiectului()
+{
+    cout << "Laptop: " << "Baterie:" << batteryLife << "%, Greutate: " << weight << endl;
 }
 
 

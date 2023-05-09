@@ -8,8 +8,7 @@ int main()
 {
     // Creem obiecte de tipul Calculator 
     Calculator calculatorDefault; // apelat prin constructor default
-    Calculator calculatorCustom("Lenovo", "Intel i9", "SSD", 240, 16);
-
+    Calculator calculatorCustom("Nvidia", "Lenovo", "SSD", 240, 16);
 
     // Creem obiecte de mai multe tipuri
 
@@ -33,9 +32,15 @@ int main()
     // Output the values of the member variables to the console
 
     // pt calculator facut cu constructor custom
-    cout << "Calculatorul custom: " << "Ram:" << calculatorCustom.getRam() << " Sursa: " << calculatorCustom.getSursa() << " W" << " GPU: " << calculatorCustom.getGpu() << " Marca: " << calculatorCustom.getMarca() << " Model Procesor: " << calculatorCustom.getProcesor().getModel() << " Stocare: " << calculatorCustom.getStocare() << endl;
+    // polymorphism static -> compile time
+    calculatorCustom.afiseazaDateleObiectului();
+    calculatorCustom.afiseazaDateleObiectului(calculatorCustom.getRam());
+
+    // polymorphism dinamic, prin ref -> runtime
+    Calculator *referintaLaLaptopulPtFaculta = &laptopulPtFaculta;
+    referintaLaLaptopulPtFaculta->afiseazaDateleObiectului();
 
     // pt calculatorul facut cu constructor default: 
-    cout << "Calculatorul default: " << "Ram:" << calculatorDefault.getRam() << " Sursa: " << calculatorDefault.getSursa() << " W" << " GPU: " << calculatorDefault.getGpu() << " Marca: " << calculatorDefault.getMarca() << " Model Procesor: " << calculatorDefault.getProcesor().getModel() << " Stocare: " << calculatorDefault.getStocare() << endl;
+    calculatorDefault.afiseazaDateleObiectului(calculatorDefault.getRam());
 
 }
