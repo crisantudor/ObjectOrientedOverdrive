@@ -27,6 +27,12 @@
     <ClCompile Include="Procesor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CalculatorLaptopGaming.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorDesktop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Calculator.h">
@@ -36,6 +42,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Procesor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorLaptopGaming.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorDesktop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

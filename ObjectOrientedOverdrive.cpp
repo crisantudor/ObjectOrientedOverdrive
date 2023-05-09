@@ -3,8 +3,6 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
-
     // Create an object of the Calculator class
     Calculator calculator;
 

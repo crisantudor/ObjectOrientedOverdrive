@@ -8,29 +8,23 @@ protected:
     double weight;
 
 public:
-    void setBatteryLife(int life) {
-        batteryLife = life;
-    }
-
-    void setWeight(double w) {
-        weight = w;
-    }
-
-    int getBatteryLife() const {
-        return batteryLife;
-    }
-
-    double getWeight() const {
-        return weight;
-    }
-
     // constructors
     CalculatorLaptop();
-
     CalculatorLaptop(int b, double w);
 
     // destructors
     ~CalculatorLaptop();
+
+    // settere
+    void setBatteryLife(int life);
+    void setWeight(double w);
+
+    // gettere
+    int getBatteryLife();
+    double getWeight();
+
+    // metode custom
+    string calculateBatteryLife();
 };
 
 

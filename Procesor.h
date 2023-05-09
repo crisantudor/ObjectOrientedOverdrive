@@ -19,11 +19,13 @@ class Procesor
         // destructor
         ~Procesor();
 
+        // settere
         void setModel(std::string mod);
         void setFrecventa(double freq);
         void setNumarNuclee(int nuclee);
         void setProducator(std::string prod);
 
+        // gettere
         string getModel();
         int getNumarNuclee();
         double getFrecventa();
