@@ -7,46 +7,46 @@ using namespace std;
 // clasa A din diagrama
 class Calculator
 {
-protected:
-	string marca;
-	int ram;
-	int sursa;
-	Procesor procesor;
+	protected:
+		string marca;
+		int ram;
+		int sursa;
+		Procesor procesor;
 
-private:
-	string gpu;
-	string stocare;
+	private:
+		string gpu;
+		string stocare;
 
-public:
-	// Default constructor
-	Calculator();
+	public:
+		// Default constructor
+		Calculator();
 
-	// Constructor with parameters
-	Calculator(string gpu, string m, string stoc, int s, int rm);
+		// Constructor with parameters
+		Calculator(string gpu, string m, string stoc, int s, int rm);
 
-	// Copy constructor
-	Calculator(const Calculator& other);
+		// Copy constructor
+		Calculator(const Calculator& other);
 
-	// Destructor
-	~Calculator();
+		// Destructor
+		~Calculator();
 
-	// settere
-	void setRam(int rm);
-	void setSursa(int s);
-	void setGpu(string g);
-	void setMarca(string m);
-	void setStocare(string s);
+		// settere
+		void setRam(int rm);
+		void setSursa(int s);
+		void setGpu(string g);
+		void setMarca(string m);
+		void setStocare(string s);
 
-	// gettere
-	int getRam();
-	int getSursa();
-	string getGpu();
-	string getMarca();
-	string getStocare();
-	Procesor getProcesor();
+		// gettere
+		int getRam();
+		int getSursa();
+		string getGpu();
+		string getMarca();
+		string getStocare();
+		Procesor getProcesor();
 
-	virtual void afiseazaDateleObiectului();
+		virtual void afiseazaDateleObiectului();
 
-	void afiseazaDateleObiectului(int r);
+		void afiseazaDateleObiectului(int r);
 };
 
