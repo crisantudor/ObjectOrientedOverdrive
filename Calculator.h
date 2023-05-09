@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// clasa A din diagrama
 class Calculator
 {
 protected:

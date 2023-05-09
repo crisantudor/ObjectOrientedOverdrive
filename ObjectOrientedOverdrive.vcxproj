@@ -130,10 +130,12 @@
     <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="CalculatorLaptop.cpp" />
     <ClCompile Include="ObjectOrientedOverdrive.cpp" />
+    <ClCompile Include="Procesor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Calculator.h" />
     <ClInclude Include="CalculatorLaptop.h" />
+    <ClInclude Include="Procesor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
