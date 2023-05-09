@@ -19,6 +19,8 @@ class CalculatorLaptop : public Calculator {
         void setBatteryLife(int life);
         void setWeight(double w);
 
+        void setRam(int rm); // method override 
+
         // gettere
         int getBatteryLife();
         double getWeight();

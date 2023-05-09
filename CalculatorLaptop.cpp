@@ -10,6 +10,11 @@ void CalculatorLaptop::setWeight(double w)
     weight = w;
 }
 
+void CalculatorLaptop::setRam(int rm)
+{
+    ram = rm;
+}
+
 int CalculatorLaptop::getBatteryLife()
 {
     return batteryLife;
